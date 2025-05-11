@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step 1</title>
+    <link rel="stylesheet" href="./scss/global.css" />
+  </head>
+  <body>
+    <div class="app">
+      <main class="interface">
+        <header class="interface__header">
+          <a class="header__logo" href="#"
+            ><img src="./img/logo.svg" alt="Logo Timer Dot Gif"
+          /></a>
+          <ul class="header__buttons">
+            <li>
+              <button class="header__button">
+                <img src="./img/moon.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button class="header__button">
+                <img src="./img/fullscreen.svg" alt="" />
+              </button>
+            </li>
+          </ul>
+        </header>
+        <div class="interface__texts">
+          <p>Ready to set a timer?</p>
+        </div>
+        <div class="interface__display">
+          <div class="display">
+            <div class="display__steps">
+              <span class="display__step display__step--active">Time</span>
+              <span class="display__step">Theme</span>
+              <span class="display__step">Confirm</span>
+            </div>
+            <div class="display__clock">
+              <div class="display__hours">00</div>
+              <div class="display__colon">:</div>
+              <div class="display__minutes display__minutes--active">12</div>
+              <div class="display__colon display__colon--active">:</div>
+              <div class="display__seconds display__seconds--active">56</div>
+            </div>
+          </div>
+        </div>
+        <div class="keyboard">
+          <div class="keyboard__key--dark" id="seven">
+            <div class="keyboard__key--center">
+              <div class="keyboard__key--indent-square">
+                <div class="keyboard__key-character">7</div>
+              </div>
+            </div>
+          </div>
+          <div class="keyboard__key--dark" id="eight">
+            <div class="keyboard__key--center">
+              <div class="keyboard__key--indent-square">
+                <div class="keyboard__key-character">8</div>
+              </div>
+            </div>
+          </div>
+          <div class="keyboard__key--dark" id="nine">
+            <div class="keyboard__key--center">
+              <div class="keyboard__key--indent-square">
+                <div class="keyboard__key-character">9</div>
+              </div>
+            </div>
+          </div>
+          <div class="keyboard__key--dark" id="delete">
+            <div class="keyboard__key--left">
+              <div class="keyboard__key-character">del</div>
+            </div>
+          </div>
+          <div class="keyboard__key--dark" id="four">
+            <div class="keyboard__key--center">
+              <div class="keyboard__key--indent-square">
+                <div class="keyboard__key-character">4</div>
+              </div>
+            </div>
+          </div>
+          <div class="keyboard__key--dark" id="five">
+            <div class="keyboard__key--center">
+              <div class="keyboard__key--indent-square">
+                <div class="keyboard__key-character">5</div>
+              </div>
+            </div>
+          </div>
+          <div class="keyboard__key--dark" id="six">
+            <div class="keyboard__key--center">
+              <div class="keyboard__key--indent-square">
+                <div class="keyboard__key-character">6</div>
+              </div>
+            </div>
+          </div>
+          <div class="keyboard__key--dark" id="one_min">
+            <div class="keyboard__key--left">
+              <div class="keyboard__key-character">+1<br />min</div>
+            </div>
+          </div>
+          <div class="keyboard__key--dark" id="one">
+            <div class="keyboard__key--center">
+              <div class="keyboard__key--indent-square">
+                <div class="keyboard__key-character">1</div>
+              </div>
+            </div>
+          </div>
+          <div class="keyboard__key--dark" id="two">
+            <div class="keyboard__key--center">
+              <div class="keyboard__key--indent-square">
+                <div class="keyboard__key-character">2</div>
+              </div>
+            </div>
+          </div>
+          <div class="keyboard__key--dark" id="three">
+            <div class="keyboard__key--center">
+              <div class="keyboard__key--indent-square">
+                <div class="keyboard__key-character">3</div>
+              </div>
+            </div>
+          </div>
+          <div class="keyboard__key--dark" id="ten_secs">
+            <div class="keyboard__key--left">
+              <div class="keyboard__key-character">+10<br />segs</div>
+            </div>
+          </div>
+          <div class="keyboard__key--dark" id="cero">
+            <div class="keyboard__key--center">
+              <div class="keyboard__key--indent-rectangle">
+                <div class="keyboard__key-character">0</div>
+              </div>
+            </div>
+          </div>
+          <div class="keyboard__key--orange" id="confirm">
+            <div class="keyboard__key--center">
+              <div class="keyboard__key-character">OK</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside class="viewmaster"></aside>
+    </div>
+  </body>
+</html>

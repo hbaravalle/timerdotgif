@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step 2</title>
+    <link rel="stylesheet" href="./scss/global_test_key.css" />
+  </head>
+  <body>
+    <div class="app">
+      <main class="interface">
+        <header class="interface__header">
+          <a class="header__logo" href="#"
+            ><img src="./img/logo.svg" alt="Logo Timer Dot Gif"
+          /></a>
+          <ul class="header__buttons">
+            <li>
+              <button class="header__button">
+                <img src="./img/moon.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button class="header__button">
+                <img src="./img/fullscreen.svg" alt="" />
+              </button>
+            </li>
+          </ul>
+        </header>
+        <div class="interface__texts">
+          <p>
+            Search for a set of GIFs. Type a keyword and we’ll take care of the
+            rest
+          </p>
+        </div>
+        <div class="interface__display">
+          <div class="display">
+            <div class="display__steps">
+              <span class="display__step">Time</span>
+              <span class="display__step display__step--active">Theme</span>
+              <span class="display__step">Confirm</span>
+            </div>
+            <div class="display__search">friday_</div>
+          </div>
+        </div>
+        <div class="keyboard" id="step2">
+          <!-- /// -->
+          <div class="key k-back">
+            <div class="key__socket--square">
+              <div class="key__cap">
+                <div class="key__face">back</div>
+              </div>
+            </div>
+          </div>
+          <div class="key k-confirm">
+            <div class="key__socket--square">
+              <div class="key__cap--orange">
+                <div class="key__face">next</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /// -->
+      </main>
+      <aside class="left">
+        <div class="viewmaster">
+          <div class="picture">
+            <img src="./img/example.jpg" alt="" />
+          </div>
+          <div class="picture">
+            <img src="./img/example.jpg" alt="" />
+          </div>
+          <div class="picture">
+            <img src="./img/example.jpg" alt="" />
+          </div>
+        </div>
+        <div class="credits">
+          <p>
+            ©timer.gif<br />
+            Powered by Giphy<br />
+            ChangoFanko, 2024
+          </p>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
