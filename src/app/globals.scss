@@ -18,6 +18,10 @@ body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .app {
   height: 100dvh;
   display: grid;
@@ -178,7 +182,7 @@ body {
 
   &#step2,
   &#step3 {
-    grid-template-columns: repeat(5, calc(22dvw / 5));
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 70px;
     grid-template-areas: 'back back confirm confirm confirm';
   }

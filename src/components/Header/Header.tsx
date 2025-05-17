@@ -1,7 +1,25 @@
+'use client';
+
 import Image from 'next/image';
 import styles from './Header.module.scss';
 
 export default function Header() {
+  const goFullscreen = () => {
+    const element = document.documentElement;
+
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else {
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if ((element as any).webkitRequestFullscreen) {
+        (element as any).webkitRequestFullscreen();
+      } else if ((element as any).msRequestFullscreen) {
+        (element as any).msRequestFullscreen();
+      }
+    }
+  };
+
   return (
     <header className={styles.header}>
       <a className={styles.header__logo} href='#'>
@@ -20,7 +38,7 @@ export default function Header() {
           </button>
         </li>
         <li>
-          <button className={styles.header__button}>
+          <button className={styles.header__button} onClick={goFullscreen}>
             <Image src='/images/fullscreen.svg' width={25} height={25} alt='' />
           </button>
         </li>

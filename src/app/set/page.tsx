@@ -1,8 +1,9 @@
 import InterfaceWrapper from '@/components/InterfaceWrapper/InterfaceWrapper';
 import Header from '@/components/Header/Header';
+import Link from 'next/link';
 import Image from 'next/image';
 
-export default function step1() {
+export default function SetPage() {
   return (
     <div className='app'>
       <main className='interface'>
@@ -155,13 +156,15 @@ export default function step1() {
               </div>
             </div>
 
-            <div className='key k-confirm'>
-              <div className='key__socket--square'>
-                <div className='key__cap--orange'>
-                  <div className='key__face'>OK</div>
+            <Link href='/theme'>
+              <div className='key k-confirm'>
+                <div className='key__socket--square'>
+                  <div className='key__cap--orange'>
+                    <div className='key__face'>OK</div>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </InterfaceWrapper>
       </main>
@@ -208,7 +211,6 @@ export default function step1() {
           </p>
         </div>
       </aside>
-      F
     </div>
   );
 }
